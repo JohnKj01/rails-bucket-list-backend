@@ -12,4 +12,27 @@ class ItemsController < ApplicationController
           render json: { errors: @item.errors }, status: :unprocessable_entity
         end
     end
+    def destroy
+        @item = Item.find_by_id(params[:id])
+        if @item
+          @item.destroy
+          render json: @item, include: { category: { only: [:id, :name] } }
+        else
+          render json: { errors: "Item not found" }, status: :not_found
+        end
+      end
+    
+      def patch
+        @item = Item.find_by_id(params[:id])
+        if @item
+          @item.update(completed: params[:completed])
+          render json: @item, include: { category: { only: [:id, :name] } }
+        else
+          render json: { errors: "Item not found" }, status: :not_found
+        end
+      end
+    
+      def home
+        render json: { message: "Good luck with your project!" }
+      end
 end
