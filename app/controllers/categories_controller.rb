@@ -13,7 +13,24 @@ class CategoriesController < ApplicationController
         render json: { errors: "Category not found" }, status: :not_found
       end
     end
-  
+    def create
+        category = Category.new(category_params)
+        if category.save
+          render json: category.to_json(include: :items)
+        else
+          render json: { errors: category.errors.full_messages }, status: :unprocessable_entity
+        end
+      end
+    
+      def destroy
+        category = Category.find_by(name: params[:name])
+        if category
+          category.destroy
+          render json: category.to_json(include: :items)
+        else
+          render json: { errors: "Category not found" }, status: :not_found
+        end
+    end
     private
   
     def category_params
