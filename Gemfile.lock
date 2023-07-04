@@ -66,6 +66,7 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    bcrypt (3.1.19)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
     builder (3.2.4)
@@ -113,6 +114,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.7.1)
     rack (2.2.7)
+    rack-cors (2.0.1)
+      rack (>= 2.0.0)
     rack-test (2.1.0)
       rack (>= 1.3)
     rails (7.0.6)
@@ -160,10 +163,12 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  bcrypt
   bootsnap
   debug
   pg
   puma (~> 5.0)
+  rack-cors
   rails (~> 7.0.6)
   sqlite3
   tzinfo-data
