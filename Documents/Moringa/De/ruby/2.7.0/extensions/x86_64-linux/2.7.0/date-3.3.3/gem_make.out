@@ -1,0 +1,21 @@
+current directory: /home/najma/Documents/Moringa/Development/Code/Phase4/rails-bucket-list-backend/Documents/Moringa/De/ruby/2.7.0/gems/date-3.3.3/ext/date
+/home/najma/.rbenv/versions/2.7.4/bin/ruby -I /home/najma/.rbenv/versions/2.7.4/lib/ruby/2.7.0 -r ./siteconf20230705-32993-rvmdud.rb extconf.rb
+checking for rb_category_warn()... no
+checking for timezone in time.h with  -Werror... yes
+checking for altzone in time.h with  -Werror... no
+creating Makefile
+
+current directory: /home/najma/Documents/Moringa/Development/Code/Phase4/rails-bucket-list-backend/Documents/Moringa/De/ruby/2.7.0/gems/date-3.3.3/ext/date
+make "DESTDIR=" clean
+
+current directory: /home/najma/Documents/Moringa/Development/Code/Phase4/rails-bucket-list-backend/Documents/Moringa/De/ruby/2.7.0/gems/date-3.3.3/ext/date
+make "DESTDIR="
+compiling date_core.c
+compiling date_parse.c
+compiling date_strftime.c
+compiling date_strptime.c
+linking shared-object date_core.so
+
+current directory: /home/najma/Documents/Moringa/Development/Code/Phase4/rails-bucket-list-backend/Documents/Moringa/De/ruby/2.7.0/gems/date-3.3.3/ext/date
+make "DESTDIR=" install
+/bin/install -c -m 0755 date_core.so ./.gem.20230705-32993-toe1bl

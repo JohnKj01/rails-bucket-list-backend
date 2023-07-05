@@ -1,0 +1,15 @@
+current directory: /home/najma/Documents/Moringa/Development/Code/Phase4/rails-bucket-list-backend/Documents/Moringa/De/ruby/2.7.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+/home/najma/.rbenv/versions/2.7.4/bin/ruby -I /home/najma/.rbenv/versions/2.7.4/lib/ruby/2.7.0 -r ./siteconf20230705-32993-1satwou.rb extconf.rb
+creating Makefile
+
+current directory: /home/najma/Documents/Moringa/Development/Code/Phase4/rails-bucket-list-backend/Documents/Moringa/De/ruby/2.7.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /home/najma/Documents/Moringa/Development/Code/Phase4/rails-bucket-list-backend/Documents/Moringa/De/ruby/2.7.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/najma/Documents/Moringa/Development/Code/Phase4/rails-bucket-list-backend/Documents/Moringa/De/ruby/2.7.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make "DESTDIR=" install
+/bin/install -c -m 0755 websocket_mask.so ./.gem.20230705-32993-mkfgr4
