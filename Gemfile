@@ -50,3 +50,4 @@ end
 
 gem 'bcrypt'
 gem 'rack-cors'
+gem 'active_model_serializers'
