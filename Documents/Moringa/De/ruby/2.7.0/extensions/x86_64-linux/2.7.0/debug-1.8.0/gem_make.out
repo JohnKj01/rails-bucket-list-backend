@@ -1,0 +1,16 @@
+current directory: /home/najma/Documents/Moringa/Development/Code/Phase4/rails-bucket-list-backend/Documents/Moringa/De/ruby/2.7.0/gems/debug-1.8.0/ext/debug
+/home/najma/.rbenv/versions/2.7.4/bin/ruby -I /home/najma/.rbenv/versions/2.7.4/lib/ruby/2.7.0 -r ./siteconf20230705-32993-l3yuc7.rb extconf.rb
+creating Makefile
+
+current directory: /home/najma/Documents/Moringa/Development/Code/Phase4/rails-bucket-list-backend/Documents/Moringa/De/ruby/2.7.0/gems/debug-1.8.0/ext/debug
+make "DESTDIR=" clean
+
+current directory: /home/najma/Documents/Moringa/Development/Code/Phase4/rails-bucket-list-backend/Documents/Moringa/De/ruby/2.7.0/gems/debug-1.8.0/ext/debug
+make "DESTDIR="
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/najma/Documents/Moringa/Development/Code/Phase4/rails-bucket-list-backend/Documents/Moringa/De/ruby/2.7.0/gems/debug-1.8.0/ext/debug
+make "DESTDIR=" install
+/bin/install -c -m 0755 debug.so ./.gem.20230705-32993-1mt9uw2/debug

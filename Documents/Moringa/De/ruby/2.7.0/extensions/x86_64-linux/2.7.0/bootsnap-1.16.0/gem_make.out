@@ -1,0 +1,15 @@
+current directory: /home/najma/Documents/Moringa/Development/Code/Phase4/rails-bucket-list-backend/Documents/Moringa/De/ruby/2.7.0/gems/bootsnap-1.16.0/ext/bootsnap
+/home/najma/.rbenv/versions/2.7.4/bin/ruby -I /home/najma/.rbenv/versions/2.7.4/lib/ruby/2.7.0 -r ./siteconf20230705-32993-svj8aw.rb extconf.rb
+creating Makefile
+
+current directory: /home/najma/Documents/Moringa/Development/Code/Phase4/rails-bucket-list-backend/Documents/Moringa/De/ruby/2.7.0/gems/bootsnap-1.16.0/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /home/najma/Documents/Moringa/Development/Code/Phase4/rails-bucket-list-backend/Documents/Moringa/De/ruby/2.7.0/gems/bootsnap-1.16.0/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/najma/Documents/Moringa/Development/Code/Phase4/rails-bucket-list-backend/Documents/Moringa/De/ruby/2.7.0/gems/bootsnap-1.16.0/ext/bootsnap
+make "DESTDIR=" install
+/bin/install -c -m 0755 bootsnap.so ./.gem.20230705-32993-ja8v9c/bootsnap
