@@ -1,7 +1,16 @@
 class User < ApplicationRecord
-    attr_accessor :username
     has_secure_password
-    validates :username, presence: true
-    validates :username, uniqueness: true
-    validates :username, length: { minimum: 4 }
+
+    validates :name, presence: true
+    validates :email, presence: true, uniqueness: true
+    validates :password, presence: true, length: { minimum: 6 }, if: :password_required?
+  
+    # Associations
+    has_many :items
+    
+    private
+  
+    def password_required?
+      new_record? || password.present?
+    end
 end
