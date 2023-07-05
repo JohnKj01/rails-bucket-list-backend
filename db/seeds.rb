@@ -1,37 +1,32 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
-
 puts "🌱 Seeding Lists..."
-    # Seed your database here
-    travel = Category.create(name: "travel")
-    lifestyle = Category.create(name: "lifestyle")
-    experience = Category.create(name: "experience")
+# Seed your database here
+travel = Category.create(name: "travel")
+lifestyle = Category.create(name: "lifestyle")
+experience = Category.create(name: "experience")
 
-    Item.create(name: "Travel to Amalfi Coast, Italy", completed: false, category_id: 1)
-    Item.create(name: "Travel to Santorini, Greece", completed: false, category_id: 1)
-    Item.create(name: "Road trip on The Wild Atlantic Way, Ireland's coastal route", completed: false, category_id: 1)
-    Item.create(name: "Visit the Yellowstone National Park", completed: false, category_id: 1)
-    Item.create(name: "Visit the Glacier national park", completed: false, category_id: 1)
-    Item.create(name: "Visit Alaska to see Northern lights", completed: false, category_id: 1)
+user1 = User.create(name: "John Doe", email: "john@example.com", password: "password")
+user2 = User.create(name: "Jane Smith", email: "jane@example.com", password: "password")
+user3 = User.create(name: "Mike Johnson", email: "mike@example.com", password: "password")
 
-    Item.create(name: "Meal prep every sunday", completed: false, category_id: 2)
-    Item.create(name: "Go to the gym and lift heavy 3 times a week", completed: false, category_id: 2)
-    Item.create(name: "Yoga and stretching twice a week", completed: false, category_id: 2)
-    Item.create(name: "Learn new language", completed: false, category_id: 2)
-    Item.create(name: "Talk to parents once a week", completed: false, category_id: 2)
-    Item.create(name: "Read 1 book a month", completed: false, category_id: 2)
+Item.create(name: "Travel to Amalfi Coast, Italy", completed: false, category: travel, user_id: user1.id)
+Item.create(name: "Travel to Santorini, Greece", completed: false, category: travel, user_id: user1.id)
+Item.create(name: "Road trip on The Wild Atlantic Way, Ireland's coastal route", completed: false, category: travel, user_id: user2.id)
+Item.create(name: "Visit the Yellowstone National Park", completed: false, category: travel, user_id: user2.id)
+Item.create(name: "Visit the Glacier national park", completed: false, category: travel, user_id: user3.id)
+Item.create(name: "Visit Alaska to see Northern lights", completed: false, category: travel, user_id: user3.id)
 
-    Item.create(name: "Go to pottery class", completed: false, category_id: 3)
-    Item.create(name: "Try Curling", completed: false, category_id: 3)
-    Item.create(name: "Bungee jumping", completed: false, category_id: 3)
-    Item.create(name: "Try white water rafting", completed: false, category_id: 3)
-    Item.create(name: "See musical live", completed: false, category_id: 3)
-    Item.create(name: "Learn how to make Cannoli", completed: false, category_id: 3)
-    
+Item.create(name: "Meal prep every Sunday", completed: false, category: lifestyle, user_id: user1.id)
+Item.create(name: "Go to the gym and lift heavy 3 times a week", completed: false, category: lifestyle, user_id: user1.id)
+Item.create(name: "Yoga and stretching twice a week", completed: false, category: lifestyle, user_id: user2.id)
+Item.create(name: "Learn a new language", completed: false, category: lifestyle, user_id: user2.id)
+Item.create(name: "Talk to parents once a week", completed: false, category: lifestyle, user_id: user3.id)
+Item.create(name: "Read 1 book a month", completed: false, category: lifestyle, user_id: user3.id)
+
+Item.create(name: "Go to pottery class", completed: false, category: experience, user_id: user1.id)
+Item.create(name: "Try Curling", completed: false, category: experience, user_id: user1.id)
+Item.create(name: "Bungee jumping", completed: false, category: experience, user_id: user2.id)
+Item.create(name: "Try white water rafting", completed: false, category: experience, user_id: user2.id)
+Item.create(name: "See a live musical", completed: false, category: experience, user_id: user3.id)
+Item.create(name: "Learn how to make Cannoli", completed: false, category: experience, user_id: user3.id)
+
 puts "✅ Done seeding!"
-
