@@ -45,6 +45,6 @@ def show
 private
       
      def user_params
-         params.require(:user).permit(:username, :password, :password_confirmation)
+         params.permit(:username, :password, :password_confirmation, :user)
      end
 end
