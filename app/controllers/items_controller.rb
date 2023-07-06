@@ -12,7 +12,7 @@ class ItemsController < ApplicationController
       name: params[:name],
       completed: false,
       category_id: params[:category_id],
-      user_id: params[:user_id] # Add this line
+      user_id: params[:user_id] 
     )
     @item.save!
     render json: @item, include: { category: { only: [:id, :name] } }
@@ -20,11 +20,14 @@ class ItemsController < ApplicationController
   
   
   def show
-    @item = Item.find(params[:id])
-    render json: @item, include: { category: { only: [:id, :name] } }
-  rescue ActiveRecord::RecordNotFound
-    render json: { error: 'Item not found' }, status: :not_found
+    @item = Item.find_by(id: params[:id])
+    if @item
+      render json: @item, include: { category: { only: [:id, :name] } }
+    else
+      render json: { error: 'Item not found' }, status: :not_found
+    end
   end
+  
   
   def destroy
     @item = Item.find(params[:id])
