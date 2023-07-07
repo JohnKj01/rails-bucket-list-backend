@@ -1,0 +1,2 @@
+class GamificationController < ApplicationController
+end
