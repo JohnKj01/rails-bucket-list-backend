@@ -15,14 +15,13 @@ class ItemsController < ApplicationController
       user_id: params[:user_id] 
     )
     @item.save!
-    render json: @item, include: { category: { only: [:id, :name] } }
+    render json: @item
   end
-  
   
   def show
     @item = Item.find_by(id: params[:id])
     if @item
-      render json: @item, include: { category: { only: [:id, :name] } }
+      render json: @item 
     else
       render json: { error: 'Item not found' }, status: :not_found
     end
@@ -35,10 +34,10 @@ class ItemsController < ApplicationController
     head :no_content
   end
 
-  def patch
+  def update
     @item = Item.find(params[:id])
     @item.update!(completed: params[:completed])
-    render json: @item, include: { category: { only: [:id, :name] } }
+    render json: @item
   end
 
   def home

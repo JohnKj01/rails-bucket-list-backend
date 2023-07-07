@@ -22,11 +22,11 @@ Item.create(name: "Learn a new language", completed: false, category: lifestyle,
 Item.create(name: "Talk to parents once a week", completed: false, category: lifestyle, user_id: user3.id)
 Item.create(name: "Read 1 book a month", completed: false, category: lifestyle, user_id: user3.id)
 
-# Item.create(name: "Go to pottery class", completed: false, category: experience, user_id: user1.id)
-# Item.create(name: "Try Curling", completed: false, category: experience, user_id: user1.id)
-# Item.create(name: "Bungee jumping", completed: false, category: experience, user_id: user2.id)
-# Item.create(name: "Try white water rafting", completed: false, category: experience, user_id: user2.id)
-# Item.create(name: "See a live musical", completed: false, category: experience, user_id: user3.id)
-# Item.create(name: "Learn how to make Cannoli", completed: false, category: experience, user_id: user3.id)
+Item.create(name: "Go to pottery class", completed: false, category: experience, user_id: user1.id)
+Item.create(name: "Try Curling", completed: false, category: experience, user_id: user1.id)
+Item.create(name: "Bungee jumping", completed: false, category: experience, user_id: user2.id)
+Item.create(name: "Try white water rafting", completed: false, category: experience, user_id: user2.id)
+Item.create(name: "See a live musical", completed: false, category: experience, user_id: user3.id)
+Item.create(name: "Learn how to make Cannoli", completed: false, category: experience, user_id: user3.id)
 
 puts "✅ Done seeding!"
