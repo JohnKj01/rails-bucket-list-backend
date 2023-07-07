@@ -8,35 +8,26 @@ class ItemsController < ApplicationController
   end
 
   def create
-    @item = Item.new(
-      name: params[:name],
-      completed: false,
-      category_id: params[:category_id],
-      user_id: params[:user_id] 
-    )
+    @item = Item.new(item_params)
+    @item.completed = false
     @item.save!
     render json: @item
   end
-  
+
   def show
-    @item = Item.find_by(id: params[:id])
-    if @item
-      render json: @item 
-    else
-      render json: { error: 'Item not found' }, status: :not_found
-    end
+    @item = find_item_by_id
+    render json: @item
   end
-  
-  
+
   def destroy
-    @item = Item.find(params[:id])
+    @item = find_item_by_id
     @item.destroy!
     head :no_content
   end
 
   def update
-    @item = Item.find(params[:id])
-    @item.update!(completed: params[:completed])
+    @item = find_item_by_id
+    @item.update!(item_params)
     render json: @item
   end
 
@@ -45,6 +36,14 @@ class ItemsController < ApplicationController
   end
 
   private
+
+  def item_params
+    params.require(:item).permit(:name, :completed, :category_id, :user_id, :completed_by)
+  end
+
+  def find_item_by_id
+    Item.find_by(id: params[:id]) || item_not_found
+  end
 
   def item_not_found
     render json: { errors: "Item not found" }, status: :not_found
