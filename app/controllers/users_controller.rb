@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   def create
     if params[:password] == params[:password_confirmation]
       user = User.create!(user_params.slice(:name, :email, :password))
-      render json: { message: "User created successfully" }, status: :created
+      render json: user, status: :created
     else
       render json: { errors: ["Password and password confirmation do not match"] }, status: :unprocessable_entity
     end
