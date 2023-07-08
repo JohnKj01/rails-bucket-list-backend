@@ -5,7 +5,7 @@ class Item < ActiveRecord::Base
   validates :name, presence: true
   validates :category_id, presence: true 
   validates :completed, inclusion: { in: [true, false] } 
-  validates :completed_by, presence: true 
+  validates :completed_at, presence: true 
   
   # Returns an array of error messages generated during validation.
   def errors_array
