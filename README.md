@@ -65,5 +65,3 @@ Before making any significant changes, please discuss them with the project main
 
 ## Author
 This project was created by Samuel, John, Najma, Kelvin and Allan
-
-
