@@ -18,9 +18,9 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: bucketlist_p8o3
+  database: <%= ENV['PG_DATABASE'] %>
   pool: 5
   timeout: 5000
-  host: dpg-cihuo0l9aq012eog39dg-a
-  username: soundmoney254
-  password: ixBq2VCAEdggeVCVSsIiw8YDYazel3YO
+  host: <%= ENV['PG_HOST'] %>
+  username: <%= ENV['PG_USERNAME'] %>
+  password: <%= ENV['PG_PASSWORD'] %>
