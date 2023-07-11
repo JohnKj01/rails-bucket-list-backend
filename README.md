@@ -1,6 +1,6 @@
-# Bucket List Project
+# The BucketList
 
-The Bucket List Project is a web application developed using RoR (Ruby on Rails) and React JS. It aims to provide users with a seamless and comprehensive platform where they can effortlessly generate, organize, and monitor the progression of their diverse aspirations, goals, and dreams, thereby comprising their esteemed bucket list.
+The Bucket List is a web application developed using RoR (Ruby on Rails) and React JS. It aims to provide users with a seamless and comprehensive platform where they can effortlessly create, organize, and monitor the progression of their diverse aspirations, goals, and dreams, thereby comprising their esteemed bucket list.
 
 
 # Technologies Used
@@ -13,65 +13,57 @@ The Bucket List Project is a web application developed using RoR (Ruby on Rails)
 4. PostgreSQL: Used as the production database environment.
 5. Active Record: Object-relational manager for the database, facilitating easy database interactions and queries.
 
-# Installation and Setup
 
-* Clone the repository: git clone <repository-url>
-* Change to the project directory: cd bucket-list-project
-* Install dependencies: bundle install (for RoR) and npm install (for ReactJS)
-* Set up the database: rails db:setup
-* Start the development server: rails s (backend) and npm start (frontend)
+## Geting Started /Setup
+1. The project's frontend has already been deployed on Vercel.  You can use this endpoint to access it 
 
-Make sure you have Ruby, Rails, and Node.js installed on your system before proceeding with the setup.
+```sh
+https://front-q8u9iaboo-kelvinkirui.vercel.app/home
+```
 
+ ### Alternatively
 
-How to Use
-To use the Bucket List Project as a user, follow the instructions below:
+1. Clone the repo
+```sh
+git clone git@github.com:JohnKj01/rails-bucket-list-backend.git
+ ```
+Navigate to the project directory using:
 
-Clone the repository to your local machine:
+```sh
+cd rails-bucket-list-backend
+```
 
-bash
-Copy code
-git clone https://github.com/your-username/bucket-list-project.git
-Install the required dependencies. Ensure you have Node.js and npm installed. Run the following command in the project directory:
-
-Copy code
-npm install
-Set up the backend:
-
-Ensure you have Ruby and Ruby on Rails installed. If not, follow the installation instructions specific to your operating system.
-Navigate to the backend directory:
-bash
-Copy code
-cd bucket-list-project/backend
-Install the required Ruby gems:
-Copy code
+Install the required dependencies:
+```sh
 bundle install
-Set up the database by running the following commands:
-lua
-Copy code
-rails db:create
-rails db:migrate
-Start the backend server:
+ ```
+Set up the database:
 
-Copy code
-rails server
-Start the frontend development server:
+```sh
+rails db:reset
+ ```
+Start the Rails server:
 
-sql
-Copy code
-npm start
-Access the application by opening a web browser and visiting http://localhost:3000.
+```sh
+rails s
+```
+The API is now running on http://localhost:3000.
 
 You are now ready to explore the Bucket List Project, create your bucket list items, and track your progress towards achieving your goals and dreams!
 
-Contributing
-We welcome contributions to the Bucket List Project. If you have any suggestions, bug reports, or feature requests, please open an issue on the GitHub repository.
+## Contributing
+We welcome contributions to the Bucket List Project. If you have any suggestions, bug reports, or feature requests, please open an issue on the GitHub repository or submit a pull request.
 
 Before making any significant changes, please discuss them with the project maintainers to ensure they align with the project's goals and direction.
 
-License
-The Bucket List Project is open-source software licensed under the MIT License. Feel free to use, modify, and distribute the code as per the 
+## License and copyright
+- The code in this project is licensed under the terms of the General Public License (GPL-3.0).
 
+- You are granted permission to use, modify, and contribute to the project under the conditions outlined in the GPL-3.0 license.
 
+- It is important to preserve and include the copyright and license notices in all copies and distributions of the project.
+
+## Author
+This project was created by Samuel, John, Najma, Kelvin and Allan
 
 
