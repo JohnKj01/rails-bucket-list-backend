@@ -16,6 +16,7 @@ test:
   timeout: 5000
 
 production:
+  url: <%= ENV['DATABASE_URL'] %>
   adapter: postgresql
   encoding: unicode
   database: <%= ENV['PG_DATABASE'] %>
