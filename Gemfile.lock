@@ -163,7 +163,7 @@ GEM
     reline (0.3.6)
       io-console (~> 0.5)
     sqlite3 (1.6.3-x86_64-linux)
-    thor (1.2.2)
+    thor (1.4.0)
     timeout (0.4.3)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
