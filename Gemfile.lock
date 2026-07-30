@@ -164,7 +164,7 @@ GEM
     rake (13.0.6)
     reline (0.3.6)
       io-console (~> 0.5)
-    sqlite3 (1.6.3-x86_64-linux)
+    sqlite3 (2.9.5-x86_64-linux-gnu)
     thor (1.2.2)
     timeout (0.6.1)
     tzinfo (2.0.6)
